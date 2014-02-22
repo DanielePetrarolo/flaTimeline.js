@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+
+<html>
+	
+	
+	<head>
+		
+		<title>flaTimeline.js - by Daniele Petrarolo</title>
+
+		<!-- demo files -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		
+		<style>
+			.container{
+				width: 80%;
+				margin: 0 auto;
+				font-family: 'Lato', sans-serif;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('ul.flaTimeline').flaTimeline({
+					toggleSpeed: 500,
+					color: '#1ABC9C'
+				});
+			});
+		</script>
+		
+		
+		
+		<!-- flaTimeline.js -->
+		<script type="text/javascript" src="assets/js/jquery.flatimeline.js"></script>
+		<link type="text/css" rel="stylesheet" href="assets/css/jquery.flatimeline.css" />
+		
+	</head>
+	
+	
+	<body>
+		
+		
+		<div class="container">
+			
+			<header>
+				<h1>flaTimeline.js</h1>
+				<h2>A responsive, animated and customizable flat timeline.</h2>
+			</header>
+			
+			
+			<article class="topic">
+				<header><h3>Demo</h3></header>
+				
+				<ul class="flaTimeline">
+					<li class="event">
+						<div class="date">12/10/1990</div>
+						<div class="content">
+							<div class="title">I'm born!</div>
+							<div class="text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+									ullamco laboris nisi ut aliquid ex ea commodi consequat. 
+									Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, 
+									sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="event">
+						<div class="date">04/09/2010</div>
+						<div class="content">
+							<div class="title">Wow...blink-182 live show in Bologna!</div>
+							<div class="text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+									ullamco laboris nisi ut aliquid ex ea commodi consequat. 
+								</p>
+								<img src="assets/imgs/01_blink182.jpg" />
+							</div>
+						</div>
+					</li>
+					<li class="event">
+						<div class="date">20/02/2013</div>
+						<div class="content">
+							<div class="title">Degree in Computer Science</div>
+							<div class="text">
+								<p>
+									University of Insubria
+									<br />
+									Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+									ullamco laboris nisi ut aliquid ex ea commodi consequat. 
+									Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, 
+									sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</article>
+			
+
+		</div>
+		
+		
+	</body>
+	
+</html>
