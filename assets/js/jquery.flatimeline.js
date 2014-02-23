@@ -3,7 +3,7 @@
  * 
  * 
  * flaTimeline.js - http://www.danielepetrarolo.com/lab/flaTimeline.js
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Daniele Petrarolo - http://www.danielepetrarolo.com
  * 
  * 

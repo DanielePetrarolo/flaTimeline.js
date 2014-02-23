@@ -3,7 +3,7 @@
  * 
  * 
  * flaTimeline.js - http://www.danielepetrarolo.com/lab/flaTimeline.js
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Daniele Petrarolo - http://www.danielepetrarolo.com
  * 
  * 
@@ -84,15 +84,15 @@ ul.flaTimeline li.event .contentWrapper .circle{
 ul.flaTimeline li.event .contentWrapper .content{
 	color: #FFF;
 	margin: 10px;
+	padding: 20px 0;
 	border-bottom: 5px solid #000;
 }
 ul.flaTimeline li.event .contentWrapper .content .title{
 	cursor: pointer;
-	padding: 20px;
+	padding: 0 20px;
 }
 ul.flaTimeline li.event .contentWrapper .content .text{
-	padding: 20px;
-	padding-top: 0;
+	padding: 20px 20px 0 20px;
 	display: none;
 }
 ul.flaTimeline li.event .contentWrapper .content .text img{
