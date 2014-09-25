@@ -46,7 +46,6 @@
     	
     	$timeline.find('li.event .content').wrap('<div class="contentWrapper"></div>');
 		$timeline.find('li.event .contentWrapper').prepend('<div class="circle"></div>');
-		//$timeline.find('li.event').append('<div class="flaTimelineClear"></div>');
 		
     	var settings = $.extend({
     		toggle: true,
