@@ -3,7 +3,7 @@
  * 
  * 
  * flaTimeline.js - http://www.danielepetrarolo.com/lab/flaTimeline.js
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: Daniele Petrarolo - http://www.danielepetrarolo.com
  * 
  * 
@@ -51,7 +51,8 @@
     		toggle: true,
     		toggleSpeed: 300,
     		toggleEasing: 'swing',
-            color: '#999',
+            eventColor: '#999',
+            gridColor: '#DDD',
             borderRadius: '0px',
     		onStart: function(){},
     		onComplete: function(){},
@@ -85,7 +86,7 @@
 		};
         
         function darkColor(color, percent) {
-        	color = color.replace(/^\s*#|\s*$/g, '');
+        	var color = color.replace(/^\s*#|\s*$/g, '');
         	if(color.length == 3){
 		        color = color.replace(/(.)/g, '$1$1');
 		    }
@@ -138,8 +139,11 @@
         if(settings.onClosingComplete){
         	var onClosingComplete = settings.onClosingComplete;
         }
-        if(settings.color){
-        	var color = settings.color;
+        if(settings.eventColor){
+        	var eventColor = settings.eventColor;
+        }
+        if(settings.gridColor){
+        	var gridColor = settings.gridColor;
         }
         if(settings.borderRadius){
         	var borderRadius = settings.borderRadius;
@@ -148,24 +152,35 @@
         
         /*/ --- LET'S START! --- /*/
         
+        
+        // toggle
         if(toggle){
 	        $events.click(function(){
 				$event = $(this);
 				toggleEvent($event);
 			});
 		}
-		
-		setInterval(function(){checkParent();}, 20);
 
-        var borderColor = darkColor(color, -20);
+        
+        // style
+        $timeline.find('.contentWrapper, .date, .circle').andSelf().css({
+        	'border-color': gridColor
+        });
+        
+        var borderColor = darkColor(eventColor, -20);
 
 		$events.find('.contentWrapper .content').css({
-			'background': color,
+			'background': eventColor,
 			'border-color': borderColor,
 			'border-radius': borderRadius
 		});
-        
 		
+		
+		// mobile check
+		checkParent();
+		$(window).resize(function(){
+			checkParent();
+		});
 
    };
 

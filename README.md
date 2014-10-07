@@ -74,10 +74,16 @@ Options
 						<td>Set the easing of the animation that open the event to show its description.</td>
 					</tr>
 					<tr>
-						<td><strong>color</strong></td>
+						<td><strong>eventColor</strong></td>
 						<td>color</td>
 						<td>#999</td>
 						<td>Set the color of the events box. A darker color is auto-sets for their bottom.</td>
+					</tr>
+					<tr>
+						<td><strong>gridColor</strong></td>
+						<td>color</td>
+						<td>#DDD</td>
+						<td>Set the color of the timeline's grid.</td>
 					</tr>
 					<tr>
 						<td><strong>borderRadius</strong></td>
