@@ -3,7 +3,7 @@
  * 
  * 
  * flaTimeline.js - http://www.danielepetrarolo.com/lab/flaTimeline.js
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Daniele Petrarolo - http://www.danielepetrarolo.com
  * 
  * 
@@ -41,8 +41,8 @@
 
     $.fn.flaTimeline = function(options) {
     	
-    	$timeline = $(this);
-    	$events = $timeline.find('li.event');
+    	var $timeline = $(this);
+    	var $events = $timeline.find('li.event');
     	
     	$timeline.find('li.event .content').wrap('<div class="contentWrapper"></div>');
 		$timeline.find('li.event .contentWrapper').prepend('<div class="circle"></div>');
@@ -156,7 +156,7 @@
         // toggle
         if(toggle){
 	        $events.click(function(){
-				$event = $(this);
+				var $event = $(this);
 				toggleEvent($event);
 			});
 		}
