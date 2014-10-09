@@ -1,6 +1,6 @@
 flaTimeline.js
 ==============
-A responsive, animated and customizable flat timeline.
+A responsive, animated and customizable flat timeline. :)
 
 
 
