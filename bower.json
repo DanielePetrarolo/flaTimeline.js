@@ -12,6 +12,9 @@
     "timeline",
     "jQuery"
   ],
+  "dependencies": {
+    "jquery": "*"
+  },
   "authors": [
     "Daniele Petrarolo"
   ],
