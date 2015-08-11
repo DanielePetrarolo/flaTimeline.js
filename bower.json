@@ -1,0 +1,25 @@
+{
+  "name": "flaTimeline.js",
+  "version": "1.1.1",
+  "description": "flaTimeline.js",
+  "main": [
+    "assets/css/jquery.flatimeline.css",
+    "assets/js/jquery.flatimeline.js"
+  ],
+  "keywords": [
+    "flaTimeline",
+    "flat",
+    "timeline",
+    "jQuery"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "authors": [
+    "Daniele Petrarolo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
+}
